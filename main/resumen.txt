@@ -1,0 +1,75 @@
+
+
+
+---------------img2-----------------
+>numpts*6013358*
+>numcore*5469827*
+>numborder*295311*
+>numnoise*248220*
+>numclusterpts*5765401*
+>numcluster*47*
+
+
+Total points: 6013358
+Core points: 5469827
+Border points: 295311
+Noise points: 248220
+Total clustered points: 5765401
+Num clusters: 47
+clusterid-1073390: 26 points
+clusterid-976652: 33 points
+clusterid-720701: 25 points
+clusterid-981401: 26 points
+clusterid-932431: 67 points
+clusterid-1480127: 26 points
+clusterid-1498699: 834 points
+clusterid-1203599: 64 points
+clusterid-15469: 250 points
+clusterid-438975: 40 points
+clusterid-1475369: 86 points
+clusterid-537682: 27 points
+clusterid-636269: 46 points
+clusterid-1188110: 37 points
+clusterid-1704873: 56 points
+clusterid-1628291: 72 points
+clusterid-125830: 39 points
+clusterid-1325618: 27 points
+clusterid-963811: 26 points
+clusterid-1008921: 40 points
+
+
+------------------im3----------------
+
+>numpts*1471347*
+>numcore*579090*
+>numborder*463410*
+>numnoise*428847*
+>numclusterpts*1052767*
+>numcluster*2039*
+>>>>>>>>>>>>>>>>
+Total points: 1471347
+Core points: 579090
+Border points: 463410
+Noise points: 428847
+Total clustered points: 1052767
+Num clusters: 2039
+clusterid-744937: 78 points
+clusterid-255132: 42 points
+clusterid-249517: 60 points
+clusterid-115629: 26 points
+clusterid-213157: 99 points
+clusterid-164615: 161 points
+clusterid-85988: 36 points
+clusterid-103722: 373 points
+clusterid-94399: 54 points
+clusterid-636509: 172 points
+clusterid-275866: 25 points
+clusterid-550388: 165 points
+clusterid-584691: 44 points
+clusterid-100633: 26 points
+clusterid-584682: 36 points
+clusterid-373922: 41 points
+clusterid-122314: 25 points
+clusterid-109393: 29 points
+clusterid-50769: 155 points
+clusterid-92795: 704 points

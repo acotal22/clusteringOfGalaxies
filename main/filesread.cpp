@@ -9,10 +9,10 @@ int main(int argc, char *argv[])
 
 
     ifstream file1,file2;
-    file1.open("./main/test.txt", ios_base::in);
-    file2.open("./main/archivo.txt",ios_base:: in);
+    file1.open("./clusters4.txt", ios_base::in);
+    file2.open("./archivo4.txt",ios_base:: in);
     ofstream fileOut;
-    fileOut.open("./final.txt");
+    fileOut.open("./final4.txt");
 
     string linea,linea2;
     int contador = 0;
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         float numFila;
         in>>numFila;
         for(string line2; getline(file2, line2);){
-            contador++;
+            
             if(numFila==contador){
                 istringstream in2(line2);
                 float x,y;
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
                 fileOut<<x<<" "<<y<<endl;
                 break;
             }
+            contador++;
         }
 
     }
