@@ -20,9 +20,6 @@ int main(int argc, char *argv[])
     CImg<float> src1, src2, src3;
     src1.load_tiff(argv[1]);
     src3.load_tiff(argv[1]);
-    src1.crop(1000,1000,0,0,3700,3700,0,0,3);
-    cout<<src1.size()<<endl;
-    (src1,src3).display();
     int w1 = src1.width();
     int h1 = src1.height();
     src2.load_tiff(argv[2]);
@@ -32,7 +29,7 @@ int main(int argc, char *argv[])
     cerr<<" w2 "<<w2<<" h2 "<<h2<<endl;
     unsigned long size1 = src1.size();
     unsigned long size2 = src2.size();
-    
+
     float *h_src1 = src1.data();
     float *h_src2 = src2.data();
     float *h_src3 = src1.data();
@@ -40,8 +37,12 @@ int main(int argc, char *argv[])
     map<float, int>::iterator it;
     for(int i=0; i<w1*h2; i++){
 	//h_src3[i] = h_src1[i] > h_src2[i] ? h_src1[i] - h_src2[i]: h_src2[i]-h_src1[i];
-	h_src3[i] = h_src1[i] > h_src2[i] ? h_src1[i] - h_src2[i]: 0;
+	//h_src3[i] = h_src1[i] > h_src2[i] ? h_src1[i] - h_src2[i]: 0;
 	//h_src3[i] = h_src1[i] > h_src2[i] ? 0 : h_src2[i] - h_src1[i];
+    if(h_src1[i] == h_src2[i]){
+        h_src3[i] = 0;
+    }
+    
 	mm[h_src3[i]]++;
     }
 

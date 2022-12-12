@@ -1,0 +1,516 @@
+------------------------------img1-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo1.txt
+::[DBSCANTime] oFile:  clusters1.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo1.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.0199819*
+>numgrids*62244*
+>buildgetnbrkdt*0.0221391*
+>markcoretime*0.0835359*
+>numcore*4127*
+>numpts*71798*
+clustercore bucketing
+>clustercoretime*0.00737119*
+>assignbordertime*0.00851798*
+>cleanuptime*0.005126*
+>totaltime*0.146787*
+>roundsplit**
+Writing output to file clusters1.txt
+>numpts*71798*
+>numcore*4127*
+>numborder*2902*
+>numnoise*64769*
+>numclusterpts*7081*
+>numcluster*45*
+>>>>>>>>>>>>>>>>
+Total points: 71798
+Core points: 4127
+Border points: 2902
+Noise points: 64769
+Total clustered points: 7081
+Num clusters: 45
+clusterid-4811: 68 points
+clusterid-51036: 26 points
+clusterid-62136: 25 points
+clusterid-62195: 26 points
+clusterid-4909: 68 points
+clusterid-62198: 25 points
+clusterid-22360: 74 points
+clusterid-52509: 109 points
+clusterid-56694: 67 points
+clusterid-3993: 39 points
+clusterid-38662: 25 points
+clusterid-3379: 103 points
+clusterid-39020: 39 points
+clusterid-49656: 25 points
+clusterid-36381: 35 points
+clusterid-3070: 26 points
+clusterid-53001: 3675 points
+clusterid-3205: 81 points
+clusterid-373: 70 points
+clusterid-58798: 25 points
+
+
+------------------------------img2-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo2.txt
+::[DBSCANTime] oFile:  clusters2.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo2.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.136267*
+>numgrids*609894*
+>buildgetnbrkdt*0.249958*
+>markcoretime*1.14291*
+>numcore*34178*
+>numpts*694547*
+clustercore bucketing
+>clustercoretime*0.0526202*
+>assignbordertime*0.0732079*
+>cleanuptime*0.055336*
+>totaltime*1.7104*
+>roundsplit**
+Writing output to file clusters2.txt
+>numpts*694547*
+>numcore*34178*
+>numborder*1978*
+>numnoise*658391*
+>numclusterpts*36168*
+>numcluster*244*
+>>>>>>>>>>>>>>>>
+Total points: 694547
+Core points: 34178
+Border points: 1978
+Noise points: 658391
+Total clustered points: 36168
+Num clusters: 244
+clusterid-286490: 67 points
+clusterid-589581: 31 points
+clusterid-57334: 69 points
+clusterid-609874: 246 points
+clusterid-444248: 27 points
+clusterid-363435: 91 points
+clusterid-246014: 41 points
+clusterid-422506: 73 points
+clusterid-568759: 40 points
+clusterid-409463: 325 points
+clusterid-422451: 31 points
+clusterid-97089: 45 points
+clusterid-480614: 78 points
+clusterid-490193: 211 points
+clusterid-175577: 25 points
+clusterid-425506: 32 points
+clusterid-358392: 52 points
+clusterid-605813: 38 points
+clusterid-609668: 424 points
+clusterid-360110: 242 points
+
+------------------------------img3-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo3.txt
+::[DBSCANTime] oFile:  clusters3.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo3.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.0452459*
+>numgrids*171853*
+>buildgetnbrkdt*0.060775*
+>markcoretime*0.297375*
+>numcore*60035*
+>numpts*256043*
+clustercore bucketing
+>clustercoretime*0.022579*
+>assignbordertime*0.028007*
+>cleanuptime*0.0182371*
+>totaltime*0.472289*
+>roundsplit**
+Writing output to file clusters3.txt
+>numpts*256043*
+>numcore*60035*
+>numborder*11914*
+>numnoise*184094*
+>numclusterpts*72303*
+>numcluster*398*
+>>>>>>>>>>>>>>>>
+Total points: 256043
+Core points: 60035
+Border points: 11914
+Noise points: 184094
+Total clustered points: 72303
+Num clusters: 398
+clusterid-114077: 107 points
+clusterid-119732: 26 points
+clusterid-14345: 73 points
+clusterid-128830: 98 points
+clusterid-125561: 323 points
+clusterid-133968: 740 points
+clusterid-118178: 78 points
+clusterid-147281: 31 points
+clusterid-60411: 37 points
+clusterid-135108: 170 points
+clusterid-167447: 88 points
+clusterid-144742: 29 points
+clusterid-134426: 25 points
+clusterid-164688: 56 points
+clusterid-20696: 47 points
+clusterid-163110: 70 points
+clusterid-120371: 31 points
+clusterid-163329: 631 points
+clusterid-81500: 46 points
+clusterid-151004: 25 points
+------------------------------img4-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo4.txt
+::[DBSCANTime] oFile:  clusters4.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo4.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.0328329*
+>numgrids*128078*
+>buildgetnbrkdt*0.0432441*
+>markcoretime*0.209707*
+>numcore*43384*
+>numpts*189798*
+clustercore bucketing
+>clustercoretime*0.01647*
+>assignbordertime*0.020438*
+>cleanuptime*0.013042*
+>totaltime*0.335784*
+>roundsplit**
+Writing output to file clusters4.txt
+>numpts*189798*
+>numcore*43384*
+>numborder*8425*
+>numnoise*137989*
+>numclusterpts*52093*
+>numcluster*326*
+>>>>>>>>>>>>>>>>
+Total points: 189798
+Core points: 43384
+Border points: 8425
+Noise points: 137989
+Total clustered points: 52093
+Num clusters: 326
+clusterid-111323: 147 points
+clusterid-88019: 59 points
+clusterid-89384: 199 points
+clusterid-128060: 699 points
+clusterid-127399: 42 points
+clusterid-125537: 135 points
+clusterid-127738: 25 points
+clusterid-127370: 29 points
+clusterid-126447: 52 points
+clusterid-126442: 54 points
+clusterid-96840: 130 points
+clusterid-79348: 160 points
+clusterid-102611: 254 points
+clusterid-120403: 70 points
+clusterid-116342: 73 points
+clusterid-67871: 28 points
+clusterid-92966: 132 points
+clusterid-74880: 39 points
+clusterid-116307: 314 points
+clusterid-106896: 190 points
+------------------------------img5-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo5.txt
+::[DBSCANTime] oFile:  clusters5.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo5.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.0400941*
+>numgrids*148434*
+>buildgetnbrkdt*0.051059*
+>markcoretime*0.26382*
+>numcore*61912*
+>numpts*232479*
+clustercore bucketing
+>clustercoretime*0.0223939*
+>assignbordertime*0.026896*
+>cleanuptime*0.016299*
+>totaltime*0.420843*
+>roundsplit**
+Writing output to file clusters5.txt
+>numpts*232479*
+>numcore*61912*
+>numborder*14184*
+>numnoise*156383*
+>numclusterpts*76546*
+>numcluster*424*
+>>>>>>>>>>>>>>>>
+Total points: 232479
+Core points: 61912
+Border points: 14184
+Noise points: 156383
+Total clustered points: 76546
+Num clusters: 424
+clusterid-131341: 194 points
+clusterid-143460: 28 points
+clusterid-37702: 120 points
+clusterid-111018: 27 points
+clusterid-63503: 140 points
+clusterid-10634: 26 points
+clusterid-112437: 1303 points
+clusterid-102935: 426 points
+clusterid-107020: 42 points
+clusterid-109846: 174 points
+clusterid-107006: 43 points
+clusterid-147809: 69 points
+clusterid-146610: 82 points
+clusterid-123922: 31 points
+clusterid-129813: 34 points
+clusterid-115206: 177 points
+clusterid-140974: 90 points
+clusterid-136580: 28 points
+clusterid-77273: 31 points
+clusterid-147807: 77 points
+------------------------------img6-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo6.txt
+::[DBSCANTime] oFile:  clusters6.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo6.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.0784779*
+>numgrids*273307*
+>buildgetnbrkdt*0.0973492*
+>markcoretime*0.661418*
+>numcore*169284*
+>numpts*463550*
+clustercore bucketing
+>clustercoretime*0.0961969*
+>assignbordertime*0.0802481*
+>cleanuptime*0.0284579*
+>totaltime*1.04224*
+>roundsplit**
+Writing output to file clusters6.txt
+>numpts*463550*
+>numcore*169284*
+>numborder*64003*
+>numnoise*230263*
+>numclusterpts*234244*
+>numcluster*712*
+>>>>>>>>>>>>>>>>
+Total points: 463550
+Core points: 169284
+Border points: 64003
+Noise points: 230263
+Total clustered points: 234244
+Num clusters: 712
+clusterid-240333: 227 points
+clusterid-182842: 48 points
+clusterid-114003: 25 points
+clusterid-26449: 158 points
+clusterid-22381: 37 points
+clusterid-200185: 47 points
+clusterid-237113: 430 points
+clusterid-111737: 32 points
+clusterid-265316: 148 points
+clusterid-205346: 2499 points
+clusterid-191581: 91 points
+clusterid-113977: 110 points
+clusterid-38873: 39 points
+clusterid-38865: 42 points
+clusterid-261606: 29 points
+clusterid-218470: 152 points
+clusterid-273306: 1676 points
+clusterid-272884: 49 points
+clusterid-213477: 38 points
+clusterid-151068: 25 points
+------------------------------img7-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo7.txt
+::[DBSCANTime] oFile:  clusters7.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo7.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.117989*
+>numgrids*452340*
+>buildgetnbrkdt*0.210744*
+>markcoretime*1.20901*
+>numcore*173368*
+>numpts*675710*
+clustercore bucketing
+>clustercoretime*0.137124*
+>assignbordertime*0.126836*
+>cleanuptime*0.0363741*
+>totaltime*1.83813*
+>roundsplit**
+Writing output to file clusters7.txt
+>numpts*675710*
+>numcore*173368*
+>numborder*96585*
+>numnoise*405757*
+>numclusterpts*271204*
+>numcluster*926*
+>>>>>>>>>>>>>>>>
+Total points: 675710
+Core points: 173368
+Border points: 96585
+Noise points: 405757
+Total clustered points: 271204
+Num clusters: 926
+clusterid-127393: 91 points
+clusterid-374945: 69 points
+clusterid-192280: 26 points
+clusterid-417731: 25 points
+clusterid-448323: 107 points
+clusterid-421736: 25 points
+clusterid-42031: 135 points
+clusterid-305548: 25 points
+clusterid-449462: 45 points
+clusterid-376389: 533 points
+clusterid-193896: 30 points
+clusterid-71589: 117 points
+clusterid-426819: 168 points
+clusterid-394039: 26 points
+clusterid-237801: 26 points
+clusterid-452248: 2662 points
+clusterid-378783: 167 points
+clusterid-338741: 27 points
+clusterid-267741: 165 points
+clusterid-237805: 262 points
+
+------------------------------img8-----------------------------
+::[DBSCANTime] iFile:  exampleData/archivo8.txt
+::[DBSCANTime] oFile:  clusters8.txt
+::[DBSCANTime] rounds:  1
+::[DBSCANTime] EPS:    9.9
+::[DBSCANTime] MINPTS: 25
+::[DBSCANTime] DIM: 3
+>testsplit**
+>datafile*exampleData/archivo8.txt*
+>rounds*1*
+>eps*9.9*
+>minpts*25*
+>dim*3*
+>roundsplit**
+>serialalgo*parallel*
+>ndalgo*nd*
+>algo*exact*
+>numprocs*4*
+>assigngridtime*0.248978*
+>numgrids*727787*
+>buildgetnbrkdt*0.513557*
+>markcoretime*2.63461*
+>numcore*994918*
+>numpts*1572485*
+clustercore bucketing
+>clustercoretime*0.579554*
+>assignbordertime*0.338996*
+>cleanuptime*0.0556281*
+>totaltime*4.37139*
+>roundsplit**
+Writing output to file clusters8.txt
+>numpts*1572485*
+>numcore*994918*
+>numborder*314895*
+>numnoise*262672*
+>numclusterpts*1315496*
+>numcluster*1785*
+>>>>>>>>>>>>>>>>
+Total points: 1572485
+Core points: 994918
+Border points: 314895
+Noise points: 262672
+Total clustered points: 1315496
+Num clusters: 1785
+clusterid-596319: 117 points
+clusterid-724933: 25 points
+clusterid-609743: 29 points
+clusterid-315289: 65 points
+clusterid-204849: 48 points
+clusterid-335759: 146 points
+clusterid-181228: 44 points
+clusterid-73422: 32 points
+clusterid-305123: 88 points
+clusterid-224536: 177 points
+clusterid-721296: 44 points
+clusterid-140452: 25 points
+clusterid-158239: 25 points
+clusterid-601688: 41 points
+clusterid-313116: 154 points
+clusterid-24007: 26 points
+clusterid-83350: 25 points
+clusterid-117227: 51 points
+clusterid-215624: 25 points
+clusterid-61732: 26 points

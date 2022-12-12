@@ -73,3 +73,40 @@ clusterid-122314: 25 points
 clusterid-109393: 29 points
 clusterid-50769: 155 points
 clusterid-92795: 704 points
+
+--------------------------img4--------------------
+>numpts*1320600*
+>numcore*449714*
+>numborder*453420*
+>numnoise*417466*
+>numclusterpts*914767*
+>numcluster*2467*
+>>>>>>>>>>>>>>>>
+Total points: 1320600
+Core points: 449714
+Border points: 453420
+Noise points: 417466
+Total clustered points: 914767
+Num clusters: 2467
+clusterid-534363: 46 points
+clusterid-534350: 40 points
+clusterid-416177: 27 points
+clusterid-429180: 29 points
+clusterid-396954: 31 points
+clusterid-240954: 32 points
+clusterid-381431: 77 points
+clusterid-99348: 25 points
+clusterid-57099: 27 points
+clusterid-51597: 67 points
+clusterid-212434: 52 points
+clusterid-687053: 80 points
+clusterid-793982: 38 points
+clusterid-436757: 87 points
+clusterid-805091: 420 points
+clusterid-126842: 26 points
+clusterid-256345: 119 points
+clusterid-442380: 32 points
+clusterid-717563: 39 points
+clusterid-323061: 73 points
+ ... see output file for more details
+>>>>>>>>>>>>>>>>
