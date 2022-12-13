@@ -3,6 +3,10 @@
         "*.tcc": "cpp",
         "fstream": "cpp",
         "iosfwd": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "vector": "cpp",
+        "DBSCAN.C": "cpp",
+        "DBSCANTime.C": "cpp",
+        "iostream": "cpp"
     }
 }
