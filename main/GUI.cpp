@@ -184,6 +184,7 @@ int main() {
         }        
         cont++;
     }
+    system("rm cout.txt");
     while(true) {
         frame2 = cv::Scalar(49, 52, 49);
         cvui::window(frame2, width2*0.03, height2*0.02, width2*0.24, height2*0.40, "Details");
@@ -191,8 +192,8 @@ int main() {
         cvui::window(frame2, width2*0.38, height2*0.02, width2*0.6, height2*0.95, "Output");
         cvui::image(frame2, width2*0.038, height2*0.46,imgInput_res);
         cvui::image(frame2, width2*0.386, height2*0.0502,imgOutput_res);
-        cvui::text(frame2, width2*0.05, height2*0.08, "Width: 2701 px");
-        cvui::text(frame2, width2*0.05, height2*0.12, "Height: 2701 px");
+        cvui::text(frame2, width2*0.05, height2*0.08, "Width: 2701px");
+        cvui::text(frame2, width2*0.05, height2*0.12, "Height: 2701px");
         cvui::text(frame2, width2*0.05, height2*0.16, coutData.at(0));
         cvui::text(frame2, width2*0.05, height2*0.20, coutData.at(1));
         cvui::text(frame2, width2*0.05, height2*0.24, coutData.at(2));
@@ -207,6 +208,5 @@ int main() {
         break;
     }
   }
-  system("rm cout.txt");
   return 0;
 }
