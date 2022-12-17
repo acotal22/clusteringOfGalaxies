@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
     int lenght1 =0;
     int lenght2=0;
     
-
-
+    
+    // se hace un match entre los datos que entrega el DBScan con la lectura de los pixeles de la imagen
     for(string line1; getline(file1, line1); ){
         istringstream in(line1); 
         float numFila,id;
@@ -46,7 +46,10 @@ int main(int argc, char *argv[])
                     fileOut<<x<<" "<<y<<" "<<id<<endl;
                     break;
                 }
-            }else{break;}           
+            }
+            else{
+                break;
+                }           
         }
     }
 

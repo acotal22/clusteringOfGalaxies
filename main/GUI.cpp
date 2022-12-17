@@ -37,6 +37,9 @@ int main() {
   while(true) {
     frame = cv::Scalar(49, 52, 49);
     // cv::Mat frame, x, y, width, height, label
+
+    // Checkbox para seleccionar una de las 8 imagenes disponibles actualmente
+
     cvui::checkbox(frame, width*0.25, height*0.15, "Image 1", &img1);
     cvui::checkbox(frame, width*0.25, height*0.20, "Image 2", &img2);
     cvui::checkbox(frame, width*0.25, height*0.25, "Image 3", &img3);
@@ -46,6 +49,7 @@ int main() {
     cvui::checkbox(frame, width*0.55, height*0.25, "Image 7", &img7);
     cvui::checkbox(frame, width*0.55, height*0.30, "Image 8", &img8);
 
+    // Condicion que verifica que no exista mas de 1 imagen seleccionada
     if(img1==true){
         img2 = false;
         img3 = false;
@@ -126,6 +130,8 @@ int main() {
         img7 = false;
         filename="./Data/8.tiff";
     }
+
+    //se crea un script para ejecutar los codigos, donde recibe los valores seleccionados en la ventana.
     stringstream comando;
     comando << "sh script.sh " << filename << " "<< valueEpsilon << " " << valueMinPts;
     
@@ -137,21 +143,23 @@ int main() {
     cvui::text(frame, width*0.1, height*0.65, "MinPts",0.7);
     cvui::trackbar(frame, width*0.35, height*0.65, width*0.55, &valueMinPts, (int)10, (int)50);
     // Show window content
-
+    
+    //boton para iniciar el programa y correr el script 
     if (cvui::button(frame, width*0.35, height*0.85,width*0.30,height*0.10, "Start")) {
         system(comando.str().c_str());
         break;
     }
-    cvui::imshow(WINDOW1_NAME, frame);
+    cvui::imshow(WINDOW1_NAME, frame); // muestra todo lo creado anteriormente
 
-    if (cv::waitKey(20) == 27 || cv::getWindowProperty(WINDOW1_NAME, 0) < 0) {
+    // condicion para cerrar la ventana (esc y X de la barra)
+    if (cv::waitKey(20) == 27 || cv::getWindowProperty(WINDOW1_NAME, 0) < 0) { 
       break;
     }
   } 
   cv::destroyAllWindows();
 
 /////////////////////////////////////////////////////////////////////////////////
-////////////////////////////// Siguiente ventana ////////////////////////////////
+//////////////////////////////////  ventana 2 ///////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 
     double factor;
@@ -169,13 +177,19 @@ int main() {
     string TotalClusteredPoints;
     string NumClusters;
 
-    imgInput = cv::imread("result_000000.tiff",cv::IMREAD_COLOR );
+    //  se guardan las 2 imagenes en variables distintas
+    imgInput = cv::imread("result_000000.tiff",cv::IMREAD_COLOR ); 
     imgOutput = cv::imread("result_000001.tiff",cv::IMREAD_COLOR );
+
+    // resize para que las imagenes originales calzen en los rectangulos creados
+    // se aplica el mismo factor a las coord x,y ya que utilizamos imagenes cuadradas.
     cv::resize(imgInput, imgInput_res, cv::Size(), 0.167, 0.167,cv::INTER_LINEAR );
     cv::resize(imgOutput, imgOutput_res, cv::Size(), 0.305, 0.305, cv::INTER_LINEAR );
     
+    //Se abre el archivo que contiene la informacion entregada por el DBScan y se
+    // guardan los resultados del algortimo para luego mostrarlos en el cuadro Details
     ifstream ifile;
-    ifile.open("cout.txt",ios_base::in);
+    ifile.open("cout.txt",ios_base::in); 
     int cont =1;
     for(string line; getline(ifile, line); ){
         
@@ -184,7 +198,9 @@ int main() {
         }        
         cont++;
     }
-    system("rm cout.txt");
+    system("rm cout.txt"); //Script para eliminar borrar el archivo que contiene la informacion de DBScan 
+
+    // Ciclo que muestra las imagenes y la informacion guardada del DBScan
     while(true) {
         frame2 = cv::Scalar(49, 52, 49);
         cvui::window(frame2, width2*0.03, height2*0.02, width2*0.24, height2*0.40, "Details");
@@ -192,8 +208,8 @@ int main() {
         cvui::window(frame2, width2*0.38, height2*0.02, width2*0.6, height2*0.95, "Output");
         cvui::image(frame2, width2*0.038, height2*0.46,imgInput_res);
         cvui::image(frame2, width2*0.386, height2*0.0502,imgOutput_res);
-        cvui::text(frame2, width2*0.05, height2*0.08, "Width: 2701px");
-        cvui::text(frame2, width2*0.05, height2*0.12, "Height: 2701px");
+        cvui::text(frame2, width2*0.05, height2*0.08, "Width: 2701 px");
+        cvui::text(frame2, width2*0.05, height2*0.12, "Height: 2701 px");
         cvui::text(frame2, width2*0.05, height2*0.16, coutData.at(0));
         cvui::text(frame2, width2*0.05, height2*0.20, coutData.at(1));
         cvui::text(frame2, width2*0.05, height2*0.24, coutData.at(2));
@@ -203,7 +219,8 @@ int main() {
 
         // Show window content
         cvui::imshow(WINDOW2_NAME, frame2);
-
+        
+    // condicion para cerrar la ventana (esc y X de la barra)    
     if (cv::waitKey(20) == 27 || cv::getWindowProperty(WINDOW2_NAME, 0) < 0) {
         break;
     }
