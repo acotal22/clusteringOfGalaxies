@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
 
 
     ifstream file1,file2;
-    file1.open("./clusters.txt", ios_base::in);
-    file2.open("./archivo.txt",ios_base:: in);
+    file1.open("./clusters.txt", ios_base::in);//se lee el archivo creado previamente por el algoritmo dbscan
+    file2.open("./archivo.txt",ios_base:: in);//archivo creado previamente en la transformación de la imagen a texo
 
     if (!file1){
         cout<<"error al abrir archivo 1"<<endl;
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
     }
     ofstream fileOut;
-    fileOut.open("./final.txt");
+    fileOut.open("./final.txt");//se crea archivo final con la coordenada de los pixel y id de cluster correspondiente
 
     string linea,linea2;
     int contador = 0;
