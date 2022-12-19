@@ -20,3 +20,13 @@ Para compilar se puede utilizar el script ubicado en /main llamado "compilar.sh"
 Se puede ejecutar simplemente con ./ejecutable desde la consola.
 
 ## Paso 4: Uso de interfaz. 
+
+La primera pantalla muestra la configuración para el algoritmo Dbscan, donde se puede escoger 1 de las 8 imágenes disponibles en la carpeta /main/data (si se desea utilizar otra imagen hay que reemplazarlas en la carpeta data, manteniendo los nombres y formato , por ej "1.tiff"). Para seleccionar una imagen desde la interfaz, primero hay que desmarcar la que esté marcada y luego marcar la imagen que se desea. Luego de tener los parámetros definidos y la imagen seleccionada se puede presionar el boton "start", donde lo llevará a la otra pantalla con los resultados.
+
+![Captura_de_pantalla_de_2022-12-15_23-00-52](https://user-images.githubusercontent.com/89815275/208330932-98c1d6b1-83c5-4e01-b617-563283bc5516.png)
+
+En esta pantalla se puede observar los clusters encontrados pintados según el id correspondiente de cada clusters. Además se puede ver información sobre los puntos y cantidad de clusters encontrados.
+
+Para ejecutar con otra imagen se debe cerrar el programa (presionando la tecla "esc") y luego volver a ejecutarlo. 
+
+![Captura_de_pantalla_de_2022-12-15_23-01-02](https://user-images.githubusercontent.com/89815275/208331009-54539492-b540-43a8-9964-ff0ecf3be242.png)
