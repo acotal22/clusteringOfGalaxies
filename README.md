@@ -10,6 +10,7 @@ En este repositorio se podrán encontrar 8 imágenes de ejemplo en la carpeta /m
 3. Contar con la libreria libX11.
 4. Instalar OpenCV, en el caso nuestro nos resultó instalar como en el siguiente link http://techawarey.com/programming/install-opencv-c-c-in-ubuntu-18-04-lts-step-by-step-guide/ .
 
+Las dependencias y programas fueron probados en Ubuntu 18.04. 
 ## Paso 2: Como compilar.
 
 Para compilar se puede utilizar el script ubicado en /main llamado "compilar.sh".
